@@ -1,6 +1,6 @@
 body {
   /*font-family: "Helvetica Neue", Helvetica;*/
-  width: 90%;
+  width: 100%;
   font-weight: 200;
   letter-spacing: 1px;
   margin: 0 auto 0 auto;
@@ -13,11 +13,11 @@ body {
 
 nav{
   text-align: center;
-  margin: 0 0 20px 0;
+  /*margin: 0 0 20px 0;*/
   padding:20px 0;
   border-bottom: 1px solid grey;
   position:fixed;
-  width:90%;
+  width:100%;
   top:0;
   background-color: white;
 }
@@ -33,7 +33,8 @@ img{
 .thesis_option{
   /*font-family: 'Source Code Pro';*/
   font-weight:500;
-  margin:0 20px;
+  margin:0 40px;
+  border-bottom:1px solid black;
 }
 
 p, h1, h2,h3, blockquote, ul{

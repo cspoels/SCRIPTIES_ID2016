@@ -8,15 +8,17 @@
 	<script type="text/javascript" src="includes/vel.ui.js"></script>
 	<script type="text/javascript" src="includes/scripts.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta charset="utf-8">
 </head>
 <body>
 <nav id="nav">
-	<span class="thesis_option" id="cas_spoelstra">Cas Spoelstra</span>
-	<span class="thesis_option" id="amy">Amy Whittle</span>
-	<span class="thesis_option" id="merel">Merel Raven</span>
-	<span class="thesis_option" id="missy">Missy Skae</span>
-	<span class="thesis_option" id="willem">Willem Kempers</span>
-	<span class="thesis_option" id="merel">Merel Raven</span>
+	<span class="thesis_option" id="willem">The Artificial Other</span>
+	<span class="thesis_option" id="merel">De invloed van het alomtegenwoordige internet, digitale zelfpresentatie en online identiteit op het offline leven.</span>
+	<span class="thesis_option" id="casdr">De Stad als Speeltuin</span>
+	<span class="thesis_option" id="missy">There is More then Meets the Eye</span>
+	<span class="thesis_option" id="cas_spoelstra">Speculative Design’s Restructure of its Non-Linear Narrative through Archeological MacGuffins</span>
+	<span class="thesis_option" id="amy">Faith in Artistic Artificial Afterlife</span>
+	<span class="thesis_option" id="wilmer">Ontworpen (buiten)lichamelijke ervaringen.</span>
 </nav>
 <div class="clearspace">
  
