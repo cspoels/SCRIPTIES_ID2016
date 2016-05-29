@@ -1,0 +1,67 @@
+body {
+  /*font-family: "Helvetica Neue", Helvetica;*/
+  width: 90%;
+  font-weight: 200;
+  letter-spacing: 1px;
+  margin: 0 auto 0 auto;
+  /*background: rgb(234, 235, 235);*/
+  color: black;
+  font-size:22pt;
+   background-image: url('../img/bg.png');
+}
+
+
+nav{
+  text-align: center;
+  margin: 0 0 20px 0;
+  padding:20px 0;
+  border-bottom: 1px solid grey;
+  position:fixed;
+  width:90%;
+  top:0;
+  background-color: white;
+}
+
+img{
+  /*display:none;*/
+}
+
+.clearspace{
+  display: block;
+  height:200px;
+}
+.thesis_option{
+  /*font-family: 'Source Code Pro';*/
+  font-weight:500;
+  margin:0 20px;
+}
+
+p, h1, h2,h3, blockquote, ul{
+  
+  /*color:black;*/
+  padding: 5px;
+}
+
+
+.newest_thesis{
+ 
+}
+
+
+span{
+  /* background-color: black; */
+/* text-decoration: underline; */
+color: black;
+/* color: white; */
+line-height: 30px;
+padding: 0;
+margin: 5px;
+}
+
+.blast{
+	display: none;
+padding: 1px;
+margin: 100px;
+font-size: 200pt;
+}
+

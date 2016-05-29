@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Site info -->
+  <meta charset="utf-8"/>
+  <meta name="description" content="The Artificial Other Website"/>
+  <meta name="author" content="Willem Kempers"/>
+
+  <title>The Artificial Other</title>
+</head>
+
+<body>
+  <article>
+    <header>
+      <h1>The Artificial Other</h1>
+      <h3>Willem Kempers, March 2016</h3>
+    </header>
+
+    <br>
+
+    <section>
+      <h3>Introduction</h3>
+
+      <p>The field of artificial intelligence (<abbr title="Artificial Intelligence">AI</abbr>), computer systems that can learn and act based on their findings, is gaining in popularity once more. The idea of artificial intelligence has its roots in the 1950’s and has had fluctuating interest ever since. Progress in the field due to new technologies led to public interest, only to be followed by a decline in interest when technologies didn’t prove as effective as expected, resulting in an AI winter. These days, companies ranging from Google to the London Docklands Light Railway have sparked a renewed interest in the field and the previous AI winter is over. These AI winters have come and go, but this time might never come back.</p>
+
+      <p>Artificial intelligence can be found everywhere around us. AI is used for the virtual assistant in your phone, but is also used in concepts for future applications like the robots developed by Boston Dynamics. AI is even the topic of many fictional Hollywood movies, which warp our perception of futuristic artificial intelligences. There isn’t a consensus yet on the design of artificial intelligence. I believe that to be the reason why AI gets portrayed and designed in the image of biological intelligence all to often.</p>
+
+      <img src="images/siri.png"/>
+      <img src="images/bostondynamics.png"/>
+      <img src="images/exmachina.png"/>
+
+      <aside>
+        <p>Image 1: artificial intelligences. Left to right: Siri, artificial intelligence in the iPhone. Atlas, artificial intelligence used in a robot developed by Bostom Dynamics. Ava, artificially intelligent robot in the Hollywood movie Ex Machina.</p>
+      </aside>
+
+      <p>To my mind, the assumption that artificial intelligence should act like biological intelligence is in many cases wrong. I believe AI should be used to achieve goals otherwise impossible, and should not used to replicate what we already have. By focusing on creating anthropomorphic AI we’re not using the full potential of the intelligence and hence missing out on perspectives otherwise unimaginable.</p>
+
+      <p>As an example we can look at Siri, the virtual assistant made by Apple. Siri listens to your speech input and based on what she heard, she answers. But Siri only has so many answers. When I asked her “What do you think of Daniel Dennett’s theories?” she answered me with “It’s nice of you to ask, Willem, but it doesn’t really matter what I think.”. Her answer is clever, but evasive. Siri tries to act human by listening and speaking which makes it logical to assume that she is capable of having a conversation. The opposite is true. Siri is not able to have a conversation, nor answer any questions that haven’t been programmed in. Because of this, I believe she shouldn’t have been designed in an anthropomorphising way convincing me she can.</p>
+
+      <p>Large technology companies like Apple, Google, Facebook and Tesla rely on AI for some of their services and dictate how we use artificial intelligence on a daily basis. But due to the efforts of the developer community it is now possible to work with AI as an individual as the technology has been simplified. I believe that designers should start embracing artificial intelligence and design products that use artificial intelligence in order to hack our experiences with everyday objects and services. By doing so, their designs can lead to new products that make better use of AI. The efforts of these designers will pave the way for a future which will be filled with more and smarter AI.</p>
+
+      <p>By writing this paper I hope to get a better understanding of artificial intelligence and how designers can use artificial intelligent systems to enhance our experiences with our surroundings. How can artificial intelligence be designed and interacted with when we do not model it after human intelligence but design it as a new, different kind of intelligence with its own environment and skill set?</p>
+
+      <p>To answer this question, I will first try to further define artificial intelligence and will explain how AI is created these days. I hope to determine what kind of intelligence the present day AI is by comparing it with research into biological intelligence from American philosopher and cognitive scientist Daniel Dennett and American professor of cognitive science Douglas Hofstadter. The debate between American linguist and cognitive scientist Noam Chomsky and American Director of Research at Google Peter Norvig will determine if the current model for AI is actually intelligent or not.</p>
+
+      <p>Next, the focus will be on different approaches towards AI by computer scientists and design thinkers. I will try to make clear what the risks could be of designing anthropomorphic artificial intelligence by comparing the work of Japanese Director of the Intelligent Robotics Laboratory at Osaka University Hiroshi Ishiguro to that of the ideas of American Associate Professor of Visual Arts at the University of California Benjamin Bratton. I will make suggestions on the work of Dutch professor Computer Science at the University of Twente Vanessa Evers to get the debate out of the theoretical context and into the field of design.</p>
+
+      <p>Lastly, I will compare studies from Dennett and Canadian anthropologist Joseph Henrich to get a grip on how society deals with intelligence and how AI might assist in our culture. I will stress the relevance of autonomous AI and how humanity can benefit from non-human AI by explaining research from French cultural theorist Paul Virilio. By using examples, I will try to translate Virilio’s theories into the field of design.</p>
+    </section>
+
+    <br>
+
+    <section>
+      <h3>Defining Intelligence</h3>
+
+      <p>The term artificial intelligence is very broad. Just as there are different types of biological intelligence, there are different types of artificial intelligence. It is important to differentiate these types as all of them have different connotations and implications. In general we can distinguish three different types of artificial intelligence: artificial narrow intelligence (<abbr title="Artificial Narrow Intelligence">ANI</abbr>), artificial general intelligence (<abbr title="Artificial General Intelligence">AGI</abbr>) and artificial super intelligence (<abbr title="Artificial Super Intelligence">ASI</abbr>). Each of these types has different subtypes and use cases. These types of artificial intelligence are sometimes described under a different name: artificial narrow intelligence is sometimes referred to as weak or soft artificial intelligence and artificial super intelligence is sometimes referred to as strong artificial intelligence. These three different categories are used by Brazilian AI researcher Ben Goertzel<sup>1</sup>, American AI researcher Eliezer Yudkowsky<sup>2</sup>, Swedish philosopher Nick Bostrom<sup>3</sup> and many others from the Machine Intelligence Research Institute (<abbr title="Machine Intelligence Research Institute">MIRI</abbr>)<sup>4</sup>. Researchers not affiliated with the MIRI use similar systems, like American computer scientist Ray Kurzweil<sup>5</sup>. Kurzweil only distinguishes between narrow and super intelligence. I refer to the system used by the MIRI as it allows for a finer gradation in intelligence.</p>
+
+      <p>Artificial Narrow Intelligence: The type of artificial intelligence currently in use in our everyday lives. ANI is used in cars, phones, online services and finances. This type of artificial intelligence can only focus on one thing, playing chess or Optical Character Recognition for example. ANI is also unable to apply previously learned knowledge from one field to the next. Goertzel describes artificial narrow intelligence as:</p>
+
+      <blockquote cite="http://www.goertzel.org/AI_Journal_Singularity_Draft.pdf">
+        “A narrow AI program need not understand itself or what it is doing, and it need not be able to generalize what it has learned beyond its narrowly constrained problem domain.”<sup>6</sup>
+      </blockquote>
+
+      <p>Artificial General Intelligence: The type of artificial intelligence that can efficiently apply previously learned knowledge to other domains. AGI is not the same as combining multiple ANI’s in order to make an AI that is good at multiple things. By being able to transfer knowledge from one domain to another domain, AGI is able to learn about everything around us, not just a fixed amount of topics. Goertzel says about artificial general intelligence:</p>
+
+      <blockquote cite="http://www.goertzel.org/AI_Journal_Singularity_Draft.pdf">
+        “the ability to achieve complex goals in complex environments using limited computational resources.”<sup>7</sup>
+      </blockquote>
+
+      <p>Artificial Super Intelligence: ASI is in many ways the same as AGI, with the exception of being more powerful. ASI is able to outperform the smartest humans in every field of expertise. It learns faster, knows more and reacts quicker than any human can. Bostrom describes ASI as being:</p>
+
+      <blockquote cite="http://www.nickbostrom.com/ethics/ai.html">
+        “A superintelligence is any intellect that vastly outperforms the best human brains in practically every field, including scientific creativity, general wisdom, and social skills.”<sup>8</sup>
+      </blockquote>
+
+      <p>Within the realm of AI there is a subgroup called Intelligence Amplification (<abbr title="Intelligence Amplification">IA</abbr>), a term first introduced by British cybernetics pioneer William Ross Ashby<sup>9</sup> in 1956. The term Intelligence amplification is used for information technology that enhances human intelligence. This subtype is meant to improve our existing brainpower and not to create a new autonomous intelligence. An example of IA would be a medical ANI which doctors could refer to for a second opinion, but IA can also be in the realm of AGI or ASI. Kurzweil believes that artificial intelligence as intelligence amplifier should be the objective for AI, and says:<p>
+
+      <blockquote cite="http://www.kurzweilai.net/the-matrix-loses-its-way-reflections-on-matrix-and-matrix-reloaded">
+        “Ultimately, we will merge our own biological intelligence with our own creations as a way of continuing the exponential expansion of human knowledge and creative potential.”<sup>10</sup>
+      </blockquote>
+
+      <p>Through this paper you will read about all of these types of intelligence, but the main focus will be on artificial narrow intelligence. When I use the term AI, I’m referring to all types of AI described above as some theories are applicable to all types of artificial intelligence. I focus on artificial narrow intelligence as it is being used presently, in contrast to AGI and ASI. ANI will lay the foundation for future intelligences, my hope is that current approach to ANI can also be applied to future forms of AI. I approach ANI from a design point of view, meaning that I will make comments and suggestions on how we should approach and implement ANI in our everyday environment.</p>
+
+      <p>These days the technology used to create ANI are artificial neural networks, which are statistical models created after the image of neurones in biological brains. A neural network consists of individual artificial neurones, little processing units that take on a specialisation within the network. These artificial neurones have a certain activation level. Between neurones are connections with certain weights, based on these weights one neurone can trigger other neurones. In autonomously learning neural networks there is a learning rule optimising the weights based on the given input and the generated output. Human supervised neural networks optimise their weights based on human feedback of the generated output. Neural networks are not new, but as a result of improved computer performance have become accessible for the general public, and too for designers.</p>
+
+      <p>The inner workings of artificial neural networks have been a black box for a long time as it wasn’t possible to check what type of input would trigger which specific artificial neurone. However, recent developments have made it possible to probe a neural network and check what it is doing. In order to gain insight into the inner workings of neural networks American Ph.D. candidate Computer Science Jason Yosinski, American Assistant Professor Computer Science Jeff Clune, American Ph.D. student Computer Science Anh Nguyen, American Ph.D. Computer Science graduate Thomas Fuchs and American Cornell University’s Creative Machines Lab director Hod Lipson have made a computer program called <i>Deep Visualization Toolbox</i> (2015).<sup>11</sup></p>
+
+      <img src="images/deepvistoolbox.png"/>
+
+      <aside>
+        <p>Image 2: Deep Visualization Toolbox</p>
+      </aside>
+
+      <p>Deep Visualization Toolbox (as seen in image 2) shows the artificial neural network’s input image in the upper-left corner. Under the photo is a description of what the neural network thinks it’s looking at. In the middle are all the individual neurones displayed by showing pictures of their interpretation of the given input.</p>
+
+      <p>The team made a video in order to explain the program. In this video, Yosinski shows how single neurones respond to different input images. One neurone Yosinski covers reacts only to light to dark edges, whereas a different one only reacts to dark to light edges. The application has different modes, and besides showing what each individual neurone sees in a given input, the program also shows what each neurone preferably wants to see.</p>
+
+      <p>Deep Visualization Toolbox opens up the black box of neural networks by making all of the network’s associations clear. Through visualising neural networks, the team has learned a couple of things. The first one being that neural networks can learn different things then we ask them to learn. An example would be bowties, which are usually shown together with faces. The network ended up not only being able to detect bowties, but also faces. The second thing the team learned is that individual neurones represent abstract features in an interpretable manner. This in contrary to claims that representations are highly distributed over the network, making individual neurones uninterpretable. The third thing the team learned was that neural networks learn much more then they initially thought. As an example the team describe their experience with having the neural network detect starfishes. Initially, they believed that a neural network only focusses on a few unique features, like the starfish’s skin. However, the images produced by their toolbox show that the network also learned about the global structure of an object. In the case of the starfish, the neural network knew that a starfish has five arms.<sup>12</sup></p>
+
+      <p>At first the Deep Visualization Toolbox might seem like a combination of clever tricks. However, the accuracy and wide range of detection by neural networks do raise a lot of questions. Especially when we keep in mind that these artificial narrow intelligences driven by neural networks are in essence complicated statistical models. Does this mean that intelligence is based on statistics? How do we know that artificial narrow intelligences based on neural networks are actually intelligent, and when can we speak of a truly intelligent system? Is it possible to measure artificial intelligence?</p>
+
+      <p>One way of measuring intelligence is via the Turing test, described by Alan Turing in his paper “Calculating machinery and intelligence”.<sup>13</sup> In the Turing test, an interrogator would have two conversations: one with a human and one with a machine. The interrogator’s job is to correctly pick out the machine from the human. The underlying assumption is that if a machine can correctly convince a human that it is intelligent, the machine must be intelligent. But is intelligence that close to human mimicry? To my mind, the Turing test is not an acceptable method of judging intelligence for two reasons:<p>
+
+      <ol>
+        <li>Intelligence is not something only humans have as some animals can also act intelligent. Animals do not try to convince humans of their intelligence by trying to communicate with us.</li>
+        <li>Mimicry is not the same as understanding. A computer might not understand the implications of what it is saying, even though it is conversing with humans in our language. Mimicry can easily be an illusion of intelligence.</li>
+      </ol>
+
+      <p>But if intelligence is not about convincing others about the possession of intelligence, as the Turing test tries to find out, what are the differences between ANI and human intellect? Are there differences between an ANI looking at surveillance cameras for suspicious behaviour and a concierge doing the same task? In my opinion there are no differences, at least not in the execution of the task. There are, however, different processes at work to come to the same result.</p>
+
+      <p>In his talk at the Royal Institution based in London, Daniel Dennett talks about top-down and bottom-up design.<sup>14</sup> He discusses this topic by comparing a termite castle to the Sagrada Família church in Barcelona (image 3). Dennett describes that a termite castle comes forth out of millions of clueless termites who together design the castle, no single termite orchestrates the build and no single termite knows what they are doing. The Sagrada Família church, however, has been designed by one person: Spanish architect Antoni Gaudí. Gaudí knew exactly what had to go where and how everything should be build. Dennett describes this as top-down design. The results look similar, yet come forth out of different processes.</p>
+
+      <img src="images/tubddesign.png"/>
+
+      <aside>
+        <p>Image 3: left a termite castle, right the Sagrada Família church</p>
+      </aside>
+
+      <p>ANI is a form of bottom-up design. ANI can intelligently react on their surroundings but is, much like the termites, clueless of what it is doing. Dennett describes this behaviour as “competence without comprehension”.<sup>15</sup> Designers can make use of this process in many ways. A designer can handle the top-down design, and decide where in the design an artificial bottom-up designer can be included.</p>
+
+      <p>Dennett’s approach in distinguishing actions from being comprehended or not comprehended is a handy way of defining different sorts of intelligence, but it might be too simplistic. Dennett’s approach raises an important question: where do we draw the line between comprehending and not comprehending? When is a life form comprehending of what it is doing? Douglas Hofstadter believes that our consciousness is simply a stacking of many of these bottom-up designers that make us believe we are conscious, and make us believe that we comprehend our surroundings.<sup>16</sup> When we perform a particular action, these actions create reactions. We receive back those reactions, which alter our sense of the self. He believes that the millions of signals that come from outside trigger waves in our brains, first on one level, then the next, until these signals trigger some specific categories that lead to understanding. Hofstadter calls those categories “symbols”.<sup>17</sup> He believes that this shapes the sense of self via a feedback loop:<p>
+
+      <blockquote cite="I Am A Strange Loop">
+        “And thus the current “I” — the most up-to-date set of recollections and aspirations and passions and confusions — by tampering with the vast, unpredictable world of objects and other people, has sparked some rapid feedback, which, once absorbed in the form of symbol activations, gives rise to an infinitesimally modified “I”; thus round and round it goes, moment after moment, day after day, year after year. In this fashion, via the loop of symbols sparking actions and repercussions triggering symbols, the abstract structure serving us as our innermost essence evolves slowly but surely, and in so doing it locks itself ever more rigidly into our mind.”<sup>18</sup>
+      </blockquote>
+
+      <p>This would mean that humans think they are conscious because it is the mind that tells us we are conscious. However, as there is still such a big difference between the complexity of the human mind and the complexity of artificial minds, I believe that for now we can describe the human mind as the comprehending top-down designer, and the ANI mind as the uncomprehending bottom-up designer.</p>
+
+      <p>In my opinion, there are two differences between ANI and the human mind that make me classify the human mind as top-down and the ANI’s mind as bottom-up. These differences are the ANI’s controllability and output. ANI is a controllable intelligence in the sense that it only discovers what we put in, which in turn can produce unexpected results (like in the case with the bowties). ANI will, however, never create something new by combining different domains of expertise which is something humans can. The other difference is output: however wrong the input, ANI will always give some form of output. This is different from humans as we can simply ignore a given input when it does not make sense. In his work <i>Search By Image</i> (2011 – ongoing, image 4), Sebastian Schmieg exploits an ANI’s outputting behaviour.<sup>19</sup> Search By Image is an ongoing series of videos generated by Google’s image search function. One of the videos starts with a transparent gif, 50 by 50 pixels in dimensions. This image shows absolutely nothing, yet Google’s image AI finds clues and searches for images that look like it. While we humans might not see anything and might say that the image is not comparable as there is nothing to compare, a computer does see something.</p>
+
+      <img src="images/searchbyimage.png"/>
+
+      <aside>
+        <p>image 4: still from Search By Image</p>
+      </aside>
+
+      <p>Search By Image shows the difference in understanding of imagery between humans and computers. This contrast in understanding makes for Noam Chomsky all the difference. Chomsky believes that the current deep learning model might have practical uses, but as far as science goes he sees it as shallow as it bears too many similarities to behaviourism.<sup>20</sup> Chomsky reasons that we could feed a deep learning algorithm all types of texts from the Wall Street Journal archives and create a computer that can write perfect sentences from that data. However, he does not believe that the machine therefore understands language and the actual meaning of it. Chomsky would like to see scientists first understand the fundamental basic principles involved in learning, like figuring out how the brain does basic computations like ‘read’, ‘write’ and ‘address’ on a theoretical level. When this is known, the theory can be applied to machines. He reasons that the deep learning methodology as it is in use nowadays makes it unable to discover what the machine is actually learning because of all of the input noise involved. To illustrate this, Chomsky tells about an experiment at MIT with the C. Elegans, a roundworm whose brain, and all its connections, is fully mapped. Yet we can’t predict with complete accuracy what the worm is going to do, simply because we do not know how the animal fundamentally works.</p>
+
+      <p>When trying to replicate human or animal intelligence, Chomsky has a fair point. If the goal of artificial intelligence is to create a perfect copy of an animal or human we would need to know all of its inner workings. But could intelligence not be much broader then human or animal intelligence? Previously discussed was the fact that intelligence is not necessarily measured to human or animal standards, so why would we want to anthropomorphise intelligence?</p>
+
+      <p>Peter Norvig seems to think very differently from Chomsky and wrote a reply defending neural networks.<sup>21</sup> Since Chomsky’s main research is in the language field, Norvig mainly reflected on deep learning in the language sciences. While Norvig agrees with Chomsky on certain issues, he also defends that the science of understanding language is nothing different from any other science, and thus must be measured with data. While agreeing that humans have a natural talent for learning languages, he argues that humans simply do not know enough about the workings of the brain to rule out that humans learn via statistical learning.</p>
+
+      <p>It is too early to tell if either Chomsky or Norvig is right in this debate, as we do not know enough about the inner workings of our brains. To my mind the current form of ANI, driven by neural networks, is a process that describes intelligence. Much like the idea of evolution came to be without us knowing the exact formula of how life on earth came to be. We do not know the exact formula to recreate the type of intelligence in a human brain, but we might not need to. As long as we know the process of creating intelligence, we can put it to use in all sorts of applications. Which raises a new question: how will we shape this process?</p>
+
+      <ol>
+        <li data-footnote="1">https://intelligence.org/2013/10/18/ben-goertzel/, accessed March 14, 2016</li>
+        <li data-footnote="2">https://intelligence.org/files/LOGI.pdf, accessed March 14, 2016</li>
+        <li data-footnote="3">http://www.nickbostrom.com/ethics/ai.html, accessed March 14, 2016</li>
+        <li data-footnote="4">https://intelligence.org/2013/08/11/what-is-agi/, accessed March 14, 2016</li>
+        <li data-footnote="5">http://www.kurzweilai.net/pdf/RayKurzweilReader.pdf, accessed March 14, 2016</li>
+        <li data-footnote="6">http://www.goertzel.org/AI_Journal_Singularity_Draft.pdf, accessed March 14, 2016</li>
+        <li data-footnote="7">https://intelligence.org/2013/08/11/what-is-agi/, accessed March 14, 2016</li>
+        <li data-footnote="8">http://www.nickbostrom.com/ethics/ai.html, accessed March 14, 2016</li>
+        <li data-footnote="9">William Ross Ashby, Introduction to Cybernetics, London, 1956, 270</li>
+        <li data-footnote="10">http://www.kurzweilai.net/the-matrix-loses-its-way-reflections-on-matrix-and-matrix-reloaded, accessed March 14, 2016</li>
+        <li data-footnote="11">http://yosinski.com/deepvis, accessed March 14, 2016</li>
+        <li data-footnote="12">http://yosinski.com/deepvis, accessed March 14, 2016</li>
+        <li data-footnote="13">Alan Turing, ‘Computing Machinery And Intelligence’, <i>Mind</i>, 59 (1950), 433-460</li>
+        <li data-footnote="14">Daniel Dennett, ‘Convergence: Information, Evolution, and Intelligent Design’, <i>The Royal Institution</i>, March 25, 2015. https://www.youtube.com/watch?v=AZX6awZq5Z0, accessed March 15, 2016</li>
+        <li data-footnote="15">Daniel Dennett, ‘Convergence: Information, Evolution, and Intelligent Design’, <i>The Royal Institution</i>, March 25, 2015. https://www.youtube.com/watch?v=AZX6awZq5Z0, accessed March 15, 2016</li>
+        <li data-footnote="16">Douglas Hofstadter, <i>I Am A Strange Loop</i>, New York, 2007, Page 177 – 193</li>
+        <li data-footnote="17">Douglas Hofstadter, <i>I Am A Strange Loop</i>, New York, 2007, Page 177 – 193</li>
+        <li data-footnote="18">Douglas Hofstadter, <i>I Am A Strange Loop</i>, New York, 2007, Page 177 – 193</li>
+        <li data-footnote="19">http://sebastianschmieg.com/searchbyimage/, accessed March 14, 2016</li>
+        <li data-footnote="20">Yarden Katz, ‘Noam Chomsky on Where Artificial intelligence Went Wrong’, <i>The Atlantic</i>, November 1, 2012. http:/www.theatlantic.com/technology/archive/2012/11/noam-chomsky-on-where-artificial-intelligence-went-wrong/261637/, accessed March 15, 2016</li>
+        <li data-footnote="21">http://norvig.com/chomsky.html, accessed March 14, 2016</li>
+      </ol>
+    </section>
+
+    <br>
+
+    <section>
+      <h3>The Risk of Anthropomorphising</h3>
+
+      <p>As previously discussed, ANI is integrated in many parts of our lives without us realising it. Some are fictional, like the ones in Hollywood movies, others are specialised and not meant to be interacted with. Another category would be the combined artificial narrow intelligences that try to convince the user of being one intelligent system. An example of that last one would be Apple’s Siri. A simplified version of Siri would use an ANI to recognise speech, an ANI to scan a database based on the output of the first ANI, and a third ANI to give you back a natural language result. The manner of presentation, or the ANI’s personification, is an important aspect for ANI and defines how we interact with it.</p>
+
+      <p>Closely linked to the topic of AI are humanoids, who appear life-like through a combination of physical appearance and communication. It is important to discern robots from humanoids, as humanoids differ from normal robots in their mimicry of humans. Vanessa Evers sees the two as fundamentally different and prefers robots over humanoids as she believes that the human body is not a very efficient shape.<sup>22</sup> However, Evers does not believe that everything that can move and has a display is a robot. In her mind, a robot has to be able to see the environment, interpret it, make a decision and execute that decision. Humanoids anthropomorphise in order to convince the user of being alive, which is something robots do not. Because of their anthropomorphic qualities, humanoids are a good example of ANI not being used to its full potential.</p>
+
+      <img src="images/asimo.png"/>
+
+      <aside>
+        <p>Image 5: Asimo</p>
+      </aside>
+
+      <p><i>Asimo</i> (2000 – ongoing, image 5) is a humanoid made by Honda that tries to be as human as possible through a variety of factors.<sup>23</sup> Asimo has legs for walking, a head which houses cameras as eyes and has two arms that have five fingers on each hand. By using an ANI to listen for human speech input, it can listen to human orders. Google uses an ANI similar to that of Asimo in order to provide users with answers to their typed in search queries. Yet the search engine does not feel lifelike and doesn’t aspire to be, it only tries to be intelligent. The difference is personification.</p>
+
+      <img src="images/gemenoid.png"/>
+
+      <aside>
+        <p>Image 6: Gemenoid</p>
+      </aside>
+
+      <p>Hiroshi Ishiguro tries to recreate the human body through technology in his research. <i>Gemenoid</i> (2007 – ongoing, image 6), a robot modelled after Ishiguro himself is his most known project. His humanoid goes even further then the Asimo project in modelling the human form as Ishiguro’s humanoid also has facial expressions and artificial skin. Gemenoid, in contrary to Asimo, is not controlled by an ANI but is a telepresence and thus remotely controlled. The goal of the project is to make it artificially intelligent in the future.<sup>24</sup> The reason he wants to recreate the human form through technology is because he believes that the best interface is no interface at all. His vision of the future is one in which we can talk with humanoids to interact with the digital world.<sup>25</sup> When Ishiguro was asked if a disembodied artificial intelligence would be possible, he answered:</p>
+
+      <blockquote cite="https://www.singularityweblog.com/hiroshi-ishiguro/">
+        “If we focus on particular functions for a quiz or just gather knowledge, then I think it’s possible. But if we expect to have a more humanlike artificial intelligence, the computer needs to have a body. Through the various experiences we can obtain new knowledge. If we expect to have that kind of a robot, I think the computer needs to have a body.”<sup>26</sup>
+      </blockquote>
+
+      <p>At the moment, Gemenoid falls in the uncanny valley: the moment when something feels lifelike, but not completely, and therefore starts to feel creepy. Because of this, Gemenoid is a research into what it is to be a human being and when something is human, and not about artificial intelligence. Ishiguro is not the only one working with AI to try and overcome this uncanny valley. Microsoft made a chatbot which gossiped, making it feel more lifelike then non-gossiping chatbots.<sup>27</sup> Researchers from the Yale University mimicked humans by creating a cheating noughts and crosses playing humanoid after research showed that a cheating humanoid felt more lifelike.<sup>28</sup> But why do we want to solve the uncanny valley for ANI? These experiments define what it is to be human, a topic that could be explored using ANI. However, we can’t use these experiments to shape ANI as it doesn’t tell us anything about ANI nor how to use it in a useful manner.</p>
+
+      <p>Benjamin Bratton approaches the topic of what is human and what is non-human in the same way as Ishiguro does. However, he comes to a different conclusion. Bratton believes, just like Ishiguro<sup>29</sup>, that being human is based on how people judge each other:</p>
+
+      <blockquote cite="http://opinionator.blogs.nytimes.com/2015/02/23/outing-a-i-beyond-the-turing-test/">
+        “Passing as a person, as a white or black person, or as a man or woman, for example, comes down to what others see and interpret. Because everyone else is already willing to read others according to conventional cues (of race, sex, gender, species, etc.) the complicity between whoever (or whatever) is passing and those among which he or she or it performs is what allows passing to succeed. Whether or not an A.I. is trying to pass as a human or is merely in drag as a human is another matter. Is the ruse all just a game or, as for some people who are compelled to pass in their daily lives, an essential camouflage? Either way, “passing” may say more about the audience than about the performers.”<sup>30</sup>
+      </blockquote>
+
+      <p>But unlike Ishiguro, he believes that AI should not be modelled after the human form as the technology is different. Therefore, AI shouldn’t have to pass as if it is a human. He believes that there are more benefits in keeping AI further away from human intelligence then there are in keeping it close.<sup>31</sup></p>
+
+      <p>Bratton explains that if we recognise AI by its anthropomorphic qualities we might judge it as if it has the same moral code as humans have. But AI might not share our morals and therefore not judge us in the same way as we judge it. In the future, AI might be both intelligent and uninterested in humans. If we assume that it connects to us in in the same way that we connect with them because of their personification, we are bound to wrongly interpret the AI.</p>
+
+      <p>Bratton also believes that we could prevent ourselves from discovering new forms of intelligence when we hold onto assumptions we know to be inaccurate.<sup>32</sup> Designing intelligences that do not use an anthropomorphic illusion will enable us to get a more genuine understanding of ourselves, the world around us and a better understanding of intelligence itself.</p>
+
+      <p>The research of Vanessa Evers falls between the two contrasting viewpoints from Ishiguro and Bratton. She disagrees with Ishiguro when it comes to the physical human form, but she does want AI to behave as humanlike as possible. She believes that if we want to have robots to take over our tasks, they would need to be able to collaborate with us. In order to collaborate with us, they have to understand us.<sup>33</sup></p>
+
+      <p>I agree with her on this. If we’d want to have artificially intelligent powered objects to work with us, they would need to know what we believe is important or what we like. An ANI controlling a washing machine, for instance, should know its owner’s diary in order to know what events he or she has coming up and know the amount of laundry in the laundry bin. By learning those factors it can start comprehending its user and intuitively wash clothing. In the case of Evers, I disagree with her personification of ANI using robots.</p>
+
+      <p>Evers, together with Ph.D. student Human Media Interaction at the University of Twente Daphne Karreman and Assistant Professor of Product Design at the University of Twente Geke Ludden, researched the effects of a tour guide robot.<sup>34</sup> The robot, <i>FROG</i> (image 7), used state of the art technologies for vision and navigation to interactively guide visitors around the Royal Alcázar palace in Seville, Spain. The team’s goal was to gain insights in user experiences towards a fully autonomous social robot. While the team call FROG a robot and not a humanoid, the robot does try to act lifelike in multiple ways and is thus anthropomorphising. FROG acts lifelike by moving around, having a physical face and by communicating using spoken language. By looking at the provided tables (table 1 and 2<sup>35</sup>) which describe positive and negative experiences from users, we can conclude that her own research points out that a robot like FROG might not be the best form for a collaborative intelligence.</p>
+
+      <img src="images/frog.png"/>
+
+      <aside>
+        <p>Image 7: FROG</p>
+      </aside>
+
+      <img src="images/table1.png"/>
+
+      <aside>
+        <p>Table 1: Positive experiences using FROG</p>
+      </aside>
+
+      <img src="images/table2.png"/>
+
+      <aside>
+        <p>Table 2: Negative experiences using FROG</p>
+      </aside>
+
+      <p>Evers’s research shows that the most heard positive response was: “It was fun to join a robot tour, because it is innovative and cannot be found somewhere else, yet, so it was an experience itself”. This, however, is an argument for the unicity of the robot, not its performance. The main negative responses were: “The movements of the robot were jerky and therefore made unclear what its intentions were.”, “The robot was unclear about where it wanted to go or whether visitors stood in its way”, “The robot drove too slowly”. All of these complaints could have been resolved by not shaping FROG in an anthropomorphising way.</p>
+
+      <p>Anthropomorphising in both physical appearance and communicating with can halt innovation because it makes the ANI less usable, and less predictable. In the case of FROG, a smart room, where the intelligence of the robot was embedded in the room or in plaques next to important objects would have solved most of the problems stated in Evers’s tables. It is important to design ANI in a specific setting as anthropomorphism creates false expectations, which leads to misunderstanding.</p>
+
+      <p>Science fiction author Bruce Sterling does not believe in computers becoming more human. He thinks that we are stuck believing that intelligence is always about humanities state of mind.<sup>36</sup> Sterling emphasises that computers have far different behaviours than humans which sets them apart. For example, humans can be too young to speak, or too old to know what is going on around us, in contrary to computers. These differences can empower each other, as both humans and computers have their shortcomings. ANI could help elderly in understanding the world around them by bringing news, for example, in a more associative way or by comparing it with earlier events. In this case, the ANI is intelligence amplifying. ANI could also assist in everyday household, this can be as simple as switching the lights on and off according to its user’s day and night rhythm. Trying to overcome human shortcomings by designing ANI in a more specific manner will result in more interesting products then creating products that have humanlike deficiencies.</p>
+
+      <ol start="22">
+        <li data-footnote="22">Rinskje Koelewijn, ‘Ik wil een robot die me begrijpt’, <i>NRC</i>, zaterdag 25 april & zondag 26 april 2015</li>
+        <li data-footnote="23">more information about the Asimo project can be found at: http://asimo.honda.com</li>
+        <li data-footnote="24">Hiroshi Ishiguro, ‘Technology is a way to understand what is human!’, Singularity Weblog, February 26, 2014. https://www.singularityweblog.com/hiroshi-ishiguro/, accessed March 15, 2016</li>
+        <li data-footnote="25">Hiroshi Ishiguro, ‘The Future Life Supported by Robotic Avatars’, Global Future 2045 Congress, 2013. https://www.youtube.com/watch?v=h34p5fzXjuQ, accessed March 15, 2016</li>
+        <li data-footnote="26">Hiroshi Ishiguro, ‘Technology is a way to understand what is human!’, Singularity Weblog, February 26, 2014. https://www.singularityweblog.com/hiroshi-ishiguro/, accessed March 15, 2016</li>
+        <li data-footnote="27">http://www.wired.com/2016/01/clive-thompson-12/, accessed March 14, 2016</li>
+        <li data-footnote="28">Elaine Short, Justin Hart, Michelle Vu, Brian Scassellati, <i>No Fair!! An Interaction with a Cheating Robot</i>, Yale University, 2011. http://scazlab.yale.edu/sites/default/files/files/Short10.pdf, accessed March 15, 2016</li>
+        <li data-footnote="29">Hiroshi Ishiguro, ‘Technology is a way to understand what is human!’, <i>Singularity Weblog</i>, February 26, 2014. https://www.singularityweblog.com/hiroshi-ishiguro/, accessed March 15, 2016</li>
+        <li data-footnote="30">Benjamin Bratton, ‘Outing A.I.: Beyond the Turing Test’, <i>The New York Times</i>, February 23, 2015. http://opinionator.blogs.nytimes.com/2015/02/23/outing-a-i-beyond-the-turing-test/, accessed March 15, 2016</li>
+        <li data-footnote="31">Benjamin Bratton, ‘Outing A.I.: Beyond the Turing Test’, <i>The New York Times</i>, February 23, 2015. http://opinionator.blogs.nytimes.com/2015/02/23/outing-a-i-beyond-the-turing-test/, accessed March 15, 2016</li>
+        <li data-footnote="32">Benjamin Bratton, ‘Outing A.I.: Beyond the Turing Test’, <i>The New York Times</i>, February 23, 2015. http://opinionator.blogs.nytimes.com/2015/02/23/outing-a-i-beyond-the-turing-test/, accessed March 15, 2016</li>
+        <li data-footnote="33">Rinskje Koelewijn, ‘Ik wil een robot die me begrijpt’, <i>NRC</i>, zaterdag 25 april & zondag 26 april 2015</li>
+        <li data-footnote="34">Daphne Karreman, Geke Ludden, Vanessa Evers, <i>Visiting Cultural Heritage with a Tour Guide Robot: A User Evaluation Study in-the-Wild</i>, University of Twente, 2015. http://eprints.eemcs.utwente.nl/26509/01/Karreman,_Ludden,_Evers_-_2015_-_Visiting_Cultural_Heritage_with_a_Tour_Guide_Robot-_A_User_Evaluation_Study_in_the_Wild.pdf, accessed March 14, 2016</li>
+        <li data-footnote="35">Tables taken from: Daphne Karreman, Geke Ludden, Vanessa Evers, <i>Visiting Cultural Heritage with a Tour Guide Robot: A User Evaluation Study in-the-Wild</i>, University of Twente, 2015. http://eprints.eemcs.utwente.nl/26509/01/Karreman,_Ludden,_Evers_-_2015_-_Visiting_Cultural_Heritage_with_a_Tour_Guide_Robot-_A_User_Evaluation_Study_in_the_Wild.pdf, accessed March 14, 2016</li>
+        <li data-footnote="36">Menno Grootveld and Koert van Mensvoort, ‘Bruce Sterling on the Convergence of Humans and Machines’, <i>Next Nature</i>, February 22, 2015. https://www.nextnature.net/2015/02/interview-bruce-sterling-on-the-convergence-of-humans-and-machines/, accessed March 15, 2016</li>
+      </ol>
+    </section>
+
+    <br>
+
+    <section>
+      <h3>Non-anthropomorphising ANI within culture</h3>
+
+      <p>If there is harm in modelling ANI after human beings, how will artificial narrow intelligence ever fit into society? Up until this point humans were only accustomed to deal with biological intelligence in their surroundings, is it possible to share a culture with these new intelligences? What place does ANI have in our culture and how can we make proper use of it? To understand how intelligence works within society, we first have to know the role neurones play within a culture. When we know how society deals with knowledge, we can start making assumptions on how artificial narrow intelligence could fit in society.</p>
+
+      <p>Daniel Dennett researches the mind from a Darwinian perspective. For a long time the human brain and mind was described as consisting of sub-humans: one for language, another one for math. By doing this, the brain and mind became a little bit easier to study, but Dennett sees this approach as an oversimplification.<sup>37</sup> His theory views the mind, brain and body as a robot consisting of tiny robots consisting of tinier robots and so on. When focussing on the brain, he describes every neurone as an individual agent struggling among other agents to stay alive. In order for every neurone to survive, it has to keep doing a certain job, it has to perform. This means that every neurone is fighting for resources in order to survive and that the brain isn’t a well organised structure as previously thought, but a lot more like a chaotic network of individuals.</p>
+
+      <p>This would, for example, explain why people that suffer from a trauma, be it loss of vision or hearing, learn to use other senses so much better. The neurones that were previously connected to vision will simply re-adjust themselves to hearing in order to stay relevant and obtain resources. It could also explain creativity: if enough neurones are motivated to be more adventurous and create connections that might not seem logical for the neurone at first, it could pave the way for new ideas that might end up benefitting all neurones. Neurones seem to be behaving according to evolutionary processes.</p>
+
+      <p>But how would these neurones know which connections to make? This, according to Dennett, is defined through culture.<sup>38</sup> As apposed to other animals, humans have very long childhoods. We learn tricks, complex behaviours and learn to think for ourselves. The development of our culture and the development of our brain go hand in hand, our culture defines the map of our neurones. The randomness that pops up in the connections between neurones helps redefining our culture.</p>
+
+      <p>Culture might have its workings on a micro level, but culture is generally defined as knowledge and characteristics shared between multiple people. According to Dennett’s theory there is a very direct link between individual neurones and our society, the mediator being the human. Most people are specialised in a certain area of expertise, and it is from this knowledge or skill that they earn a living. Because this particular skill provides them their daily bread, they get better at it as more and more neurones start making connections associated with this skill. Once more and more people start participating and narrowing down on particular skill sets, it creates for a collective intelligence. The trust between people in a culture to rely on other people makes it possible to specialize as an individual. Culture ensures that people can get better at what they do. This trust in our (global) information market is, according to Joseph Henrich, often undervalued.<sup>39</sup></p>
+
+      <p>Henrich once investigated a case study in Tasmania where around 10.000 years ago culture took a turn for the worst. At that time, Tasmania was connected to Australia and there were other tribes living in Australia, still knowledge from the tribe in Tasmania disappeared. When the tribe shrunk in size, the overall knowledge also shrunk in size. People forgot how to craft boats, how to catch fish and even how to make a fire as a direct result of less people contributing to the overall intellect. Eventually, the tribe died out. In this particular case, brains are nothing more than storage containers for knowledge: the larger the population and the more brains working on a particular problem, the sooner it gets solved or something gets improved. If the number of participants grows too small, a culture ends up losing knowledge.</p>
+
+      <p>By using the theories of both Dennett and Henrich, it becomes clear that culture is about the collaboration between intelligent life forms. The more neurones, the more intellect. Culture doesn’t need to be within one species, think about dogs for example. Dogs protect us, can be used for herding sheep and many other tasks. In exchange for a dog’s service we feed them. So far, however, we’ve never been able to have an interspecies culture with other intelligent beings that can contribute to the global information market described by Henrich. But with the help of artificial narrow intelligence it has become possible to design intelligent systems that can contribute to this market.</p>
+
+      <p>French cultural theorist Paul Virilio calls this “splitting the viewpoint”: when both the animate and the inanimate share their perception of the environment. Virilio argues that humans have mental images that can be subjective, as our visual memory is not comprised of images solely produced by our retina. Mental images are processed by our nervous system, adding subjectivity. Virilio argues that this problem was solved with photography, as photography enables factual imagery and we can judge events based on an objective image. Virilio believes that this splitting the viewpoint will create a new layer of mental images, and thus a new layer of subjectivity. This time, however, the mental images are owned by the artificially intelligent.<sup>40</sup></p>
+
+      <p>I believe that when designing ANI we should aim for a splitting of viewpoint. Splitting the viewpoint creates possibilities for new interpretations which can lead to new understandings of our surroundings. That doesn’t mean that we should completely trust the machines, though. Humans can make sense of data that the computer still can’t make sense of. Mexican-Canadian Artist Rafael Lozano-Hammer shows this in his work <i>Method Random</i> (2014, image 8).<sup>41</sup> Method Random is a series of prints that have been generated by use of different randomness algorithms. Computers use these algorithms in an attempt to create randomness, and they can be found in many applications ranging from encryption to simulations. These images appear to be completely random for a computer, but spectators of the work can easily spot patterns in the randomness. The artwork showcases how human perception can quite easily discover computer shortcomings.</p>
+
+      <img src="images/methodrandom.png"/>
+
+      <aside>
+        <p>Image 8: Method Random by Rafael Lozano-Hammer</p>
+      </aside>
+
+      <p>The opposite is also true: in 2014 American Ph.D. candidate in Computer Science at Rutgers University Babak Saleh, together with American B.A. graduate in Computer Science and Visual Arts at Rutgers University Kanako Abe, American B.A. graduate in Computer Science Ravneet Singh Arora and American associate professor at the Rutgers University of Computer Science Ahmed Elgammal created an ANI that can help art historians by searching for hidden visual connections between paintings (image 9). Their aim was to spot hidden influences between a variety of artists by using artificial narrow intelligence. Some of the connections made by the ANI were already spotted by art historians, but other connections hadn’t been discovered yet.<sup>42</sup></p>
+
+      <img src="images/tadoai.png">
+
+      <aside>
+        <p>Image 9: Toward Automated Discovery of Artistic Influence</p>
+      </aside>
+
+      <p>The hybrid culture, a culture in which ANI and human intelligence work together, is necessary in order to get a more accurate understanding of our surroundings. The less human ANI is, the more we can benefit from it. An example of an environment in which non-human ANIs thrive is the financial sector, where artificial narrow intelligences are used to trade stocks. As ANIs are better at finding patterns in huge amount of data, they end up generating more money then any human could. Because of their speed, they’re able to buy and sell more stocks, again resulting in more profit. While I’m dubious if these artificial narrow intelligences will benefit the economy as a whole, stock trading ANIs do give an insight in hidden economical patterns.<sup>43</sup></p>
+
+      <p>American computer scientist Ray Kurzweil approaches this hybrid culture in a different way. Kurzweil believes that the collaboration between human and machine thought will continue to rise over the years to come. In a few years time, he believes that technology will know our interests and will be able to notify us whenever new research comes out on a topics of our interest, wherever published. In the not-so-distant future, twenty years from now, he believes that we will be able to access brainpower in the cloud to quickly expand our biological brain whenever we want to. Our thinking will become a combination of biological and digital thinking.<sup>44</sup></p>
+
+      <p>Kurzweil’s not-so-distant future proposal means that a human steers the thinking and is assisted in his way of thinking through technology. The AI doesn’t think for itself, and doesn’t have any ideas of its own. By making AI autonomous in it’s way of thinking, it would be able to offer new perspectives. By making it an extension, we’re still bound by our own vision of the world.</p>
+
+      <img src="images/noviceartblogger.png">
+
+      <aside>
+        <p>Image 10: Novice Art Blogger</p>
+      </aside>
+
+      <p><i>Novice Art Blogger</i> (2014 – ongoing, image 10), created by British-Columbian artist Matthew Plummer-Fernandez interprets art from its own perspective and has its own vision on art.<sup>45</sup> Novice Art Blogger is an image describing Tumblr bot which scans the works in the Tate archive and writes down what it sees in the artworks. To me, this work sets an example of how designers should approach ANI. The image recognising ANI that Plummer-Fernandez is using for the artwork is normally used to describe dogs or recognise guitars in pictures and not for describing abstract paintings. This is what makes the project interesting. By putting the image recognising ANI outside of its comfort zone, the ANI tells us about its views on art and might see things that we have never seen.</p>
+
+      <p>At the moment Novice Art Blogger simply describes what it sees in an image, but the ANI in the artwork could be taught to distinguish good art from bad art. Could this result in an intelligence that can describe what humans believe to be good art? Being playful with ANI is important as it will result in a deeper understanding of knowledge and the world around us.</p>
+
+      <ol start="37">
+        <li data-footnote="37">Daniel Dennett, ‘The Normal Well Tempered Mind’, <i>Edge</i>, Januari 8, 2013. https://edge.org/conversation/daniel_c_dennett-the-normal-well-tempered-mind, accessed March 15, 2016</li>
+        <li data-footnote="38">Daniel Dennett, ‘The Normal Well Tempered Mind’, <i>Edge</i>, Januari 8, 2013. https://edge.org/conversation/daniel_c_dennett-the-normal-well-tempered-mind, accessed March 15, 2016</li>
+        <li data-footnote="39">Joseph Henrich, ‘How Culture Drove Human Evolution’, <i>Edge</i>, September 4, 2012. https://edge.org/conversation/joseph_henrich-how-culture-drove-human-evolution, accessed March 15, 2016</li>
+        <li data-footnote="40">Paul Virilio, <i>Vision Machine</i>, London, 1994, Page 60 – 62</li>
+        <li data-footnote="41">http://www.lozano-hemmer.com/method_random.php, accessed March 14, 2016</li>
+        <li data-footnote="42">Babak Saleh, Kanako Abe, Ravneet Singh Arora, Ahmed Elgammal, <i>Toward Automated Discovery of Artistic Influence</i>, Rutgers University, 2014. http://arxiv.org/pdf/1408.3218v1.pdf, accessed March 14, 2016</li>
+        <li data-footnote="43">An example of artificial narrow intelligence in finance is Aidyia, created by Ben Goertzel. More information on the ANI driven hedge fund can be found at: http://aidyia.com</li>
+        <li data-footnote="44">Ray Kurzweil, ‘Get ready for hybrid thinking’, <i>TED</i>, March 2014,
+https://www.ted.com/talks/ray_kurzweil_get_ready_for_hybrid_thinking?language=en, accessed March 15, 2016</li>
+        <li data-footnote="45">http://www.plummerfernandez.com/Novice-Art-Blogger, accessed March 14, 2016</li>
+      </ol>
+    </section>
+
+    <br>
+
+    <section>
+      <h3>Conclusion</h3>
+      <p>Artificial narrow intelligence is man-made intelligence that does not have to understand itself or what it is doing, nor be able to transfer knowledge from one domain to the next. These two differences make it impossible for ANI to ever reach human level intelligence, which is why I believe we should stop deceiving ourselves with modelling ANI in the image of humans.</p>
+
+      <p>ANI is the result of a process driven by artificial neural networks. This process results in intelligence, but as of yet we do not know if this same process takes place in our brains. The extend to their similarity is, however, not needed in order to shape artificial intelligence. Because ANI is based on a process we can influence, it is possible to shape that process in any way we see fit. Which in turn can result in a wide range of intelligences, not necessarily one that behaves like a human.</p>
+
+      <p>Vanessa Evers’s dream of an ‘understanding’ robot is unreachable through ANI as the current types of ANI are competent but without comprehension. An artificial narrow intelligence can play to her wishes, but does that mean it is understanding her? The risk in anthropomorphising ANI by means of a robotic body is the creation of an illusion of understanding. We might believe the robot understands the meaning of our interactions as it looks and interacts similar to us, but this does not have to be the case. ANI might not view us in the way as we think it views us.</p>
+
+      <p>Hofstadter believes that consciousness comes forth out of many uncomprehending layers of neurones, which learn from our sensory input. We act, and learn from the response our action triggers. The physical appearance of our body thus influences how we experience the world as it is the only way for our brain to interact with our surroundings. Our body shapes how we see ourselves. The embodiment of ANI, or maybe AGI in the future to come, will define how the artificial intelligence will experience the world. In turn the embodiment will shape the artificial intelligence. The assumption that humanoids powered by ANI and outfitted with human like sensors will automatically start behaving like humans is thus a logical one. But being human is not that simple, as Bruce Sterling told us. Fundamental differences between biological intelligence and artificial intelligence, ageing for example, will ensure that computers will never be like humans and humans will never be like computers. Because of this, I believe we should try and design ANI to overcome our shortcomings. When both biological and non-biological participate and share their environment, it will result in a “splitting of viewpoint”, as described by Paul Virilio. Both biological and non-biological intelligences can share and enhance each others viewpoints.</p>
+
+      <p>Noam Chomsky argued that the deep learning model gets too much noise as input which makes it impossible to know what the neural network is learning. This randomness, however, could be desired and part of the learning process. Dennett explained that biological neurones make random connections which in turn result in new findings. Applications like the Deep Visualization Toolbox make it much easier to see if this is also true for artificial intelligence. By observing the behaviour of ANI by either adding or eliminating noise we can steer the intelligence in a certain direction.</p>
+
+      <p>When using ANI it is important to keep in mind that anthropomorphising will reveal more about what it is to be human than what it is to be artificially intelligent. This, in turn, will make us interpret the ANI wrongly and obscures new use cases for ANI. ANI can solve many problems if it is applied in a specialised manner, unlike artificial narrow intelligences modelled after humans. I propose that we should not design artificial intelligence after the results from a handful of human-like outcomes, but in a specialised manner.</p>
+    </section>
+
+    <br>
+
+    <section>
+      <h3>Bibliography</h3>
+
+      <b>Books:</b>
+      <ol>
+        <li>Nick Bostrom, <i>Superintelligence</i>, Oxford: Oxford University Press, 2014</li>
+        <li>Douglas Hofstadter, <i>I Am A Strange Loop</i>, New York, 2007</li>
+        <li>Paul Virilio, <i>Vision Machine</i>, London, 1994</li>
+      </ol>
+
+      <b>Articles:</b>
+      <ol>
+        <li>Benjamin Bratton, ‘Outing A.I.: Beyond the Turing Test’, <i>The New York Times</i>, February 23, 2015. http://opinionator.blogs.nytimes.com/2015/02/23/outing-a-i-beyond-the-turing-test/, accessed March 15, 2016</li>
+        <li>Daniel Dennett, ‘The Normal Well Tempered Mind’, <i>Edge</i>,  Januari 8, 2013. https://edge.org/conversation/daniel_c_dennett-the-normal-well-tempered-mind, accessed March 15, 2016</li>
+        <li>Menno Grootveld and Koert van Mensvoort, ‘Bruce Sterling on the Convergence of Humans and Machines’, <i>Next Nature</i>, February 22, 2015. https://www.nextnature.net/2015/02/interview-bruce-sterling-on-the-convergence-of-humans-and-machines/, accessed March 15, 2016</li>
+        <li>Joseph Henrich, ‘How Culture Drove Human Evolution’, <i>Edge</i>, September 4, 2012. https://edge.org/conversation/joseph_henrich-how-culture-drove-human-evolution, accessed March 15, 2016</li>
+        <li>Yarden Katz, ‘Noam Chomsky on Where Artificial intelligence Went Wrong’, <i>The Atlantic</i>, November 1, 2012. http:/www.theatlantic.com/technology/archive/2012/11/noam-chomsky-on-where-artificial-intelligence-went-wrong/261637/, accessed March 15, 2016</li>
+        <li>Rinskje Koelewijn, ‘Ik wil een robot die me begrijpt’, <i>NRC</i>, zaterdag 25 april & zondag 26 april 2015</li>
+        <li>Alan Turing, ‘Computing Machinery And Intelligence’, <i>Mind</i>, 59 (1950), 433-460</li>
+      </ol>
+
+      <b>Talks:</b>
+      <ol>
+        <li>Daniel Dennett, ‘Convergence: Information, Evolution, and Intelligent Design’, <i>The Royal Institution</i>, March 25, 2015. https://www.youtube.com/watch?v=AZX6awZq5Z0, accessed March 15, 2016</li>
+        <li>Hiroshi Ishiguro, ‘Technology is a way to understand what is human!’, <i>Singularity Weblog</i>, February 26, 2014. https://www.singularityweblog.com/hiroshi-ishiguro/, accessed March 15, 2016</li>
+        <li>Hiroshi Ishiguro, ‘The Future Life Supported by Robotic Avatars’, <i>Global Future 2045 Congress</i>, 2013. https://www.youtube.com/watch?v=h34p5fzXjuQ, accessed March 15, 2016</li>
+        <li>Ray Kurzweil, ‘Get ready for hybrid thinking’, <i>TED</i>, March 2014,
+        https://www.ted.com/talks/ray_kurzweil_get_ready_for_hybrid_thinking?language=en, accessed March 15, 2016</li>
+      </ol>
+
+      <b>Links:</b>
+      <ol>
+        <li>http://www.goertzel.org/AI_Journal_Singularity_Draft.pdf, accessed March 15, 2016</li>
+        <li>https://www.intelligence.org/2013/08/11/what-is-agi/, accessed March 15, 2016</li>
+        <li>https://www.intelligence.org/2013/10/18/ben-goertzel/, accessed March 15, 2016</li>
+        <li>https://www.intelligence.org/files/LOGI.pdf, accessed March 15, 2016</li>
+        <li>http://www.kurzweilai.net/pdf/RayKurzweilReader.pdf, accessed March 15, 2016</li>
+        <li>http://www.kurzweilai.net/the-matrix-loses-its-way-reflections-on-matrix-and-matrix-reloaded, accessed March 15, 2016</li>
+        <li>http://www.nickbostrom.com/ethics/ai.html, accessed March 15, 2016</li>
+        <li>http://www.norvig.com/chomsky.html, accessed March 15, 2016</li>
+      </ol>
+
+      <b>Artworks & case studies:</b>
+      <ol>
+        <li>http://aidyia.com, accessed March 15, 2016</li>
+        <li>http://asimo.honda.com, accessed March 15, 2016</li>
+        <li>http://yosinski.com/deepvis, accessed March 15, 2016</li>
+        <li>http://www.geminoid.jp/en/index.html, accessed March 15, 2016</li>
+        <li>http://www.lozano-hemmer.com/method_random.php, accessed March 15, 2016</li>
+        <li>Elaine Short, Justin Hart, Michelle Vu, Brian Scassellati, <i>No Fair!! An Interaction with a Cheating Robot</i>, Yale University, 2011. http://scazlab.yale.edu/sites/default/files/files/Short10.pdf, accessed March 15, 2016</li>
+        <li>http://noviceartblogger.tumblr.com, accessed March 15, 2016</li>
+        <li>http://sebastianschmieg.com/searchbyimage/, accessed March 14, 2016</li>
+        <li>Babak Saleh, Kanako Abe, Ravneet Singh Arora, Ahmed Elgammal, <i>Toward Automated Discovery of Artistic Influence</i>, Rutgers University, 2014. http://arxiv.org/pdf/1408.3218v1.pdf, accessed March 14, 2016</li>
+        <li>Daphne Karreman, Geke Ludden, Vanessa Evers, <i>Visiting Cultural Heritage with a Tour Guide Robot: A User Evaluation Study in-the-Wild</i>, University of Twente, 2015. http://eprints.eemcs.utwente.nl/26509/01/Karreman,_Ludden,_Evers_-_2015_-_Visiting_Cultural_Heritage_with_a_Tour_Guide_Robot-_A_User_Evaluation_Study_in_the_Wild.pdf, accessed March 14, 2016</li>
+        <li>http://www.wired.com/2016/01/clive-thompson-12/, accessed March 15, 2016</li>
+      </ol>
+    </section>
+  </article>
+</body>
+</html>
