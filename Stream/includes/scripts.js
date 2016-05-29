@@ -33,12 +33,12 @@ jQuery(document).ready(function($) {
 
 				$(".newest_thesis")
 				// Blast the text apart by word.
-				.blast({ delimiter: "character", aria:false, returnGenerated:true })
+				.blast({ delimiter: "word", aria:false, returnGenerated:true })
 				// Fade the words into view using Velocity.js.
 				.velocity("transition.fadeIn", { 
 					display: "inline-block",
-					duration: 200,
-					stagger: 200,
+					duration: 10,
+					stagger: 10,
 					delay: 400
 				}, {
 					progress:function(elements, complete, remaining, start, tweenValue){console.log(elements);}
